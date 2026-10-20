@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MILLE — Exclusief woonvastgoed vanaf €1.000.000</title>
+  <meta name="description" content="MILLE selecteert villa's, penthouses en landgoederen vanaf één miljoen euro. Persoonlijk, discreet en met oog voor wat een huis bijzonder maakt.">
+  <meta property="og:title" content="MILLE — Exclusief woonvastgoed">
+  <meta property="og:description" content="Villa's, penthouses en landgoederen vanaf €1.000.000. Zorgvuldig geselecteerd, discreet bemiddeld.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta name="theme-color" content="#17150f">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/img/hero.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      if (sessionStorage.getItem('mille-nav') === '1') {
+        document.documentElement.classList.add('veil-on', 'skip-preloader');
+        sessionStorage.removeItem('mille-nav');
+      } else {
+        document.documentElement.classList.add('is-loading');
+      }
+    } catch (e) {
+      document.documentElement.classList.add('is-loading');
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Naar de inhoud</a>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo">MILLE</div>
+      <div class="preloader__tag">Exclusief woonvastgoed</div>
+      <div class="preloader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="page-veil" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor-ring__label">Bekijk</span></div>
+
+  <header class="site-header" data-header data-over>
+    <div class="header__inner">
+      <a class="brand" href="index.html" aria-label="MILLE — naar de homepage">MILLE<span class="brand__dot">.</span><span class="brand__sub">Exclusief woonvastgoed</span></a>
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <a class="nav__link" href="collectie.html">Collectie</a>
+        <a class="nav__link" href="#standaard">Standaard</a>
+        <a class="nav__link" href="over.html">Over ons</a>
+        <a class="nav__link" href="journal.html">Journal</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <a class="header__cta" href="contact.html">Privé-afspraak</a>
+        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="menu" aria-label="Menu openen"><i></i><i></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <div class="menu__inner container">
+      <nav class="menu__nav" aria-label="Menu">
+        <a class="menu__link" href="collectie.html"><span>01</span>Collectie</a>
+        <a class="menu__link" href="index.html#standaard"><span>02</span>Standaard</a>
+        <a class="menu__link" href="over.html"><span>03</span>Over ons</a>
+        <a class="menu__link" href="journal.html"><span>04</span>Journal</a>
+        <a class="menu__link" href="contact.html"><span>05</span>Contact</a>
+      </nav>
+      <div class="menu__aside">
+        <figure><img src="assets/img/int-3.jpg" alt="Licht interieur met zicht op het duin" loading="lazy"></figure>
+        <p>Liever eerst even praten? We nemen de tijd voor een persoonlijke kennismaking, op ons kantoor of bij u thuis.</p>
+        <a class="link-arrow link-arrow--light" href="contact.html">Plan een afspraak
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="menu__foot container">
+      <span>Bergen · Amsterdam · Utrecht</span>
+      <a href="tel:+31201234567">+31 20 123 45 67</a>
+      <span>Est. 2011</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" aria-label="Introductie">
+      <div class="hero__media" data-parallax="0.1">
+        <img src="assets/img/hero.jpg" alt="Moderne villa in warm licht, met royale glaspartijen en een tuin" fetchpriority="high">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__inner container">
+        <p class="eyebrow eyebrow--light hero__eyebrow"><span class="eyebrow__dot"></span>Exclusief woonvastgoed — sinds 2011</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Waar wonen</span></span>
+          <span class="line"><span>een miljoen</span></span>
+          <span class="line"><span><em>waard</em> is.</span></span>
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__intro">Mille selecteert villa's, penthouses en landgoederen vanaf €1.000.000. Niet meer dan nodig — precies genoeg om iets bijzonders te vinden.</p>
+          <div class="hero__actions">
+            <a class="btn btn--light" href="collectie.html" data-magnetic><span>Bekijk de collectie
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+            </span></a>
+            <a class="link-arrow link-arrow--light" href="contact.html">Privé-afspraak</a>
+          </div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#filosofie">Scroll</a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Bergen aan Zee</span>
+          <span class="marquee__item">Amsterdam</span>
+          <span class="marquee__item">Lage Vuursche</span>
+          <span class="marquee__item">Wassenaar</span>
+          <span class="marquee__item">Bloemendaal</span>
+          <span class="marquee__item">Utrecht</span>
+          <span class="marquee__item">Noordwijk</span>
+          <span class="marquee__item">Rotterdam</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Bergen aan Zee</span>
+          <span class="marquee__item">Amsterdam</span>
+          <span class="marquee__item">Lage Vuursche</span>
+          <span class="marquee__item">Wassenaar</span>
+          <span class="marquee__item">Bloemendaal</span>
+          <span class="marquee__item">Utrecht</span>
+          <span class="marquee__item">Noordwijk</span>
+          <span class="marquee__item">Rotterdam</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section intro" id="filosofie">
+      <div class="container">
+        <div class="intro__head">
+          <p class="eyebrow"><span class="eyebrow__num">01</span><span class="eyebrow__dot"></span>Filosofie</p>
+          <h2 class="intro__title reveal-lines" data-reveal="fade">
+            <span class="line"><span>Een miljoen is</span></span>
+            <span class="line"><span>geen bedrag. Het is</span></span>
+            <span class="line"><span>een <em>belofte</em>.</span></span>
+          </h2>
+        </div>
+        <div class="intro__body">
+          <div data-reveal="up">
+            <p class="lead">Wij geloven niet in meer huizen. Wij geloven in het juiste huis: een plek die klopt met wie je bent, en met hoe je wilt leven.</p>
+            <p>Daarom werken we met een kleine, zorgvuldig samengestelde collectie. Elk object bezoeken we zelf. Elk detail kennen we. En elke koper krijgt één aanspreekpunt — van de eerste bezichtiging tot de overdracht bij de notaris.</p>
+          </div>
+          <div data-reveal="up" data-reveal-delay="1">
+            <p>Sinds 2011 begeleiden we kopers en verkopers in het segment vanaf één miljoen euro. Geen catalogus, geen ruis. Wel een netwerk dat vaak eerder weet wat er komt dan de markt.</p>
+            <p class="intro__sign">Mille &amp; Co.</p>
+            <a class="link-arrow" href="over.html">Lees ons verhaal
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured" id="collectie">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">02</span><span class="eyebrow__dot"></span>Uitgelichte collectie</p>
+            <h2 class="section-head__title display-lg" data-reveal="up">Drie huizen die je <em>niet</em> vergeet.</h2>
+          </div>
+          <div class="section-head__aside" data-reveal="up" data-reveal-delay="1">
+            <p>Geen eindeloze lijst, maar een selectie die we met overtuiging durven te verdedigen. Dit zijn de huizen waar we deze maand zelf het liefst zouden wonen.</p>
+          </div>
+        </div>
+
+        <div class="featured__grid">
+          <a class="prop prop--portrait" href="villa-duinlicht.html" data-reveal="image" data-cursor="Bekijk">
+            <div class="prop__media">
+              <span class="prop__tag">Nieuw</span>
+              <img src="assets/img/detail.jpg" alt="Villa Duinlicht in Bergen aan Zee" loading="lazy">
+              <span class="prop__view">Bekijk
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+              </span>
+            </div>
+            <div class="prop__body">
+              <div class="prop__row">
+                <h3 class="prop__name">Villa Duinlicht</h3>
+                <span class="prop__price">€ 2.450.000</span>
+              </div>
+              <p class="prop__place">Bergen aan Zee · Noord-Holland</p>
+              <div class="prop__specs"><span>6 kamers</span><span>385 m²</span><span>2019</span></div>
+            </div>
+          </a>
+
+          <a class="prop prop--tall" href="penthouse-amstel.html" data-reveal="image" data-reveal-delay="1" data-cursor="Bekijk">
+            <div class="prop__media">
+              <span class="prop__tag">Exclusief</span>
+              <img src="assets/img/int-2.jpg" alt="Penthouse Amstel met een lichte woonkamer en houten trap" loading="lazy">
+              <span class="prop__view">Bekijk
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+              </span>
+            </div>
+            <div class="prop__body">
+              <div class="prop__row">
+                <h3 class="prop__name">Penthouse Amstel</h3>
+                <span class="prop__price">€ 1.975.000</span>
+              </div>
+              <p class="prop__place">Amsterdam · Noord-Holland</p>
+              <div class="prop__specs"><span>4 kamers</span><span>212 m²</span><span>2021</span></div>
+            </div>
+          </a>
+
+          <a class="prop prop--landscape" href="landgoed-de-beuk.html" data-reveal="image" data-reveal-delay="2" data-cursor="Bekijk">
+            <div class="prop__media">
+              <span class="prop__tag">Landgoed</span>
+              <img src="assets/img/villa-4.jpg" alt="Landgoed De Beuk in Lage Vuursche" loading="lazy">
+              <span class="prop__view">Bekijk
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+              </span>
+            </div>
+            <div class="prop__body">
+              <div class="prop__row">
+                <h3 class="prop__name">Landgoed De Beuk</h3>
+                <span class="prop__price">€ 3.850.000</span>
+              </div>
+              <p class="prop__place">Lage Vuursche · Utrecht</p>
+              <div class="prop__specs"><span>9 kamers</span><span>640 m²</span><span>1908</span></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="featured__foot" data-reveal="fade">
+          <p class="featured__count"><strong>9</strong> objecten in de collectie · prijzen vanaf €1.000.000</p>
+          <a class="link-arrow" href="collectie.html">Bekijk alle objecten
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section standard" id="standaard">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">03</span><span class="eyebrow__dot"></span>De Mille-standaard</p>
+            <h2 class="section-head__title display-lg" data-reveal="up">Meer dan een makelaar.<br>Een <em>medestander</em>.</h2>
+          </div>
+          <div class="section-head__aside" data-reveal="up" data-reveal-delay="1">
+            <p>Vastgoed op dit niveau vraagt om aandacht, rust en discretie. Vier stappen, één aanspreekpunt, geen verrassingen achteraf.</p>
+          </div>
+        </div>
+
+        <div class="standard__layout">
+          <div class="standard__list">
+            <article class="service" data-service tabindex="0" data-reveal="up">
+              <span class="service__num">01</span>
+              <div>
+                <div class="service__head"><h3 class="service__title">Selectie</h3><span class="service__plus" aria-hidden="true">+</span></div>
+                <p class="service__text">Wij kijken verder dan de portalen. Off-market, via ons netwerk en met een scherp oog voor locatie, licht en potentie.</p>
+              </div>
+            </article>
+            <article class="service" data-service tabindex="0" data-reveal="up" data-reveal-delay="1">
+              <span class="service__num">02</span>
+              <div>
+                <div class="service__head"><h3 class="service__title">Presentatie</h3><span class="service__plus" aria-hidden="true">+</span></div>
+                <p class="service__text">Fotografie, film en styling op het niveau van het huis. Elk object krijgt een eigen editorial, geen standaardlijstje.</p>
+              </div>
+            </article>
+            <article class="service" data-service tabindex="0" data-reveal="up" data-reveal-delay="2">
+              <span class="service__num">03</span>
+              <div>
+                <div class="service__head"><h3 class="service__title">Bemiddeling</h3><span class="service__plus" aria-hidden="true">+</span></div>
+                <p class="service__text">Een rustige, vasthoudende onderhandeling. Wij verdedigen uw belang — niet ons volume.</p>
+              </div>
+            </article>
+            <article class="service" data-service tabindex="0" data-reveal="up" data-reveal-delay="3">
+              <span class="service__num">04</span>
+              <div>
+                <div class="service__head"><h3 class="service__title">Nazorg</h3><span class="service__plus" aria-hidden="true">+</span></div>
+                <p class="service__text">Van notaris tot verbouwing: ook na de sleuteloverdracht blijven we aanspreekbaar. Soms nog jaren.</p>
+              </div>
+            </article>
+            <p class="standard__note"><span>Persoonlijk · discreet · zonder ruis</span><span>04 stappen</span></p>
+          </div>
+
+          <div class="standard__media" data-reveal="right">
+            <img src="assets/img/int-1.jpg" alt="Warm ingericht interieur met natuurlijk licht" data-service-img="0" class="is-active" loading="lazy">
+            <img src="assets/img/int-5.jpg" alt="Minimalistisch interieur met zicht op groen" data-service-img="1" loading="lazy">
+            <img src="assets/img/int-3.jpg" alt="Eetkamer met designmeubelen" data-service-img="2" loading="lazy">
+            <img src="assets/img/detail.jpg" alt="Gevel van een modern huis in warm avondlicht" data-service-img="3" loading="lazy">
+            <div class="standard__caption"><span>De Mille-standaard</span><span>01 — 04</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Mille in cijfers">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat" data-reveal="up">
+            <div class="stat__num"><span data-count="148">0</span></div>
+            <div class="stat__label">Woningen bemiddeld</div>
+          </div>
+          <div class="stat" data-reveal="up" data-reveal-delay="1">
+            <div class="stat__num"><span data-count="14">0</span></div>
+            <div class="stat__label">Jaar in het segment</div>
+          </div>
+          <div class="stat" data-reveal="up" data-reveal-delay="2">
+            <div class="stat__num"><span data-count="9">0</span></div>
+            <div class="stat__label">Provincies</div>
+          </div>
+          <div class="stat" data-reveal="up" data-reveal-delay="3">
+            <div class="stat__num"><span data-count="96" data-suffix="%">0%</span></div>
+            <div class="stat__label">Beveelt ons aan</div>
+          </div>
+        </div>
+        <div class="stats__foot">
+          <span>Particuliere kopers &amp; verkopers</span>
+          <span>Instapwaarde € 1.000.000</span>
+          <span>Est. 2011 — Bergen, NL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote">
+      <div class="container">
+        <div class="quote__grid">
+          <div class="quote__portrait">
+            <img src="assets/img/team-1.jpg" alt="Portret van Joris van Dijk" data-quote-photo class="is-active" loading="lazy">
+            <img src="assets/img/team-2.jpg" alt="Portret van Marijke de Boer" data-quote-photo loading="lazy">
+            <img src="assets/img/team-3.jpg" alt="Portret van Thomas Vermeer" data-quote-photo loading="lazy">
+            <span class="quote__badge">Aan het woord</span>
+          </div>
+
+          <div class="quote__stage" aria-roledescription="carousel" aria-label="Ervaringen van klanten">
+            <div class="quote__item is-active" data-quote>
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <blockquote class="quote__text">Mille vond niet zomaar een huis. Ze vonden de plek waar ons gezin eindelijk landde.</blockquote>
+              <div class="quote__meta"><strong>Eva &amp; Joris van Dijk</strong><span>Villa Duinlicht, Bergen</span></div>
+            </div>
+            <div class="quote__item" data-quote>
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <blockquote class="quote__text">Geen druk, geen verkooppraatje. Alleen iemand die precies begreep waarom we wilden verhuizen.</blockquote>
+              <div class="quote__meta"><strong>Marijke de Boer</strong><span>Penthouse Amstel, Amsterdam</span></div>
+            </div>
+            <div class="quote__item" data-quote>
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <blockquote class="quote__text">Binnen twee weken stonden we in een huis dat nog niet online stond. Dat is het verschil.</blockquote>
+              <div class="quote__meta"><strong>Thomas &amp; Lotte Vermeer</strong><span>Landgoed De Beuk, Lage Vuursche</span></div>
+            </div>
+
+            <div class="quote__nav">
+              <div class="quote__dots" role="tablist" aria-label="Kies een ervaring">
+                <button class="quote__dot is-active" data-quote-dot role="tab" aria-label="Ervaring 1" aria-selected="true"></button>
+                <button class="quote__dot" data-quote-dot role="tab" aria-label="Ervaring 2" aria-selected="false"></button>
+                <button class="quote__dot" data-quote-dot role="tab" aria-label="Ervaring 3" aria-selected="false"></button>
+              </div>
+              <span class="quote__count" data-quote-count>01 / 03</span>
+              <div class="quote__arrows">
+                <button class="quote__arrow" data-quote-prev aria-label="Vorige ervaring">
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+                </button>
+                <button class="quote__arrow" data-quote-next aria-label="Volgende ervaring">
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journal" id="journal">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">04</span><span class="eyebrow__dot"></span>Journal</p>
+            <h2 class="section-head__title display-lg" data-reveal="up">Notities over <em>wonen</em>.</h2>
+          </div>
+          <div class="section-head__aside" data-reveal="up" data-reveal-delay="1">
+            <p>Over licht, materiaal en de keuzes die een huis tot een thuis maken. Af en toe ook gewoon over de markt.</p>
+          </div>
+        </div>
+
+        <div class="journal__grid">
+          <a class="post" href="journal.html#artikel-1" data-reveal="up">
+            <div class="post__media"><img src="assets/img/int-4.jpg" alt="Woning met een geopende gevel en veel daglicht" loading="lazy"></div>
+            <div class="post__meta"><span>Wonen</span><span>14 oktober 2026</span></div>
+            <h3 class="post__title">Licht als bouwmateriaal</h3>
+            <p class="post__excerpt">Waarom de beste huizen niet groter zijn, maar beter georiënteerd. Een gesprek met architecten over daglicht.</p>
+          </a>
+          <a class="post" href="journal.html#artikel-2" data-reveal="up" data-reveal-delay="1">
+            <div class="post__media"><img src="assets/img/int-1.jpg" alt="Woonkamer met natuurlijke materialen en warm licht" loading="lazy"></div>
+            <div class="post__meta"><span>Markt</span><span>28 september 2026</span></div>
+            <h3 class="post__title">De kunst van het eerste bod</h3>
+            <p class="post__excerpt">Wat een bod zegt — en wat het verbergt. Vijf lessen uit vijftien jaar onderhandelen boven een miljoen.</p>
+          </a>
+          <a class="post" href="journal.html#artikel-3" data-reveal="up" data-reveal-delay="2">
+            <div class="post__media"><img src="assets/img/int-5.jpg" alt="Woonkamer die overgaat in de tuin" loading="lazy"></div>
+            <div class="post__meta"><span>Leven</span><span>02 september 2026</span></div>
+            <h3 class="post__title">Buiten wonen, binnen leven</h3>
+            <p class="post__excerpt">De tuin als extra kamer. Over terrassen, duinen en de Nederlandse zon die je het beste vroeg kunt opvangen.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__bg" aria-hidden="true"><img src="assets/img/pool.jpg" alt="" loading="lazy"></div>
+      <div class="container cta__inner">
+        <p class="eyebrow cta__eyebrow"><span class="eyebrow__dot"></span>Persoonlijk · discreet · op afspraak</p>
+        <h2 class="cta__title" data-reveal="up">Vertel ons wat je <em>zoekt</em>.</h2>
+        <div class="cta__row">
+          <p>Een eerste gesprek kost niets en verplicht tot niets. Vaak weten we binnen één uur of we iets voor u kunnen betekenen.</p>
+          <a class="btn btn--light" href="contact.html" data-magnetic><span>Plan een kennismaking
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+          </span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">MILLE<span>.</span></div>
+          <p class="footer__tag">Exclusief woonvastgoed vanaf één miljoen. Zorgvuldig geselecteerd, discreet bemiddeld.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="collectie.html">Collectie</a></li>
+            <li><a href="over.html">Over ons</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+31201234567">+31 20 123 45 67</a></li>
+            <li><a href="mailto:welkom@mille.nl">welkom@mille.nl</a></li>
+            <li>Eeuwigelaan 12<br>1861 CL Bergen</li>
+            <li>Op afspraak, ma–za</li>
+          </ul>
+        </div>
+        <div class="footer__news">
+          <h4>De privé-selectie</h4>
+          <p>Ontvang maximaal twee keer per maand de huizen die nog niet online staan.</p>
+          <form class="newsletter" data-newsletter>
+            <input type="email" name="email" placeholder="Uw e-mailadres" aria-label="Uw e-mailadres" required>
+            <button type="submit" aria-label="Aanmelden">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+            </button>
+          </form>
+          <div class="newsletter__msg" data-newsletter-msg aria-live="polite"></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Mille Exclusief Woonvastgoed</span>
+        <span><a href="juridisch.html#privacy">Privacy</a> · <a href="juridisch.html#voorwaarden">Voorwaarden</a> · <a href="juridisch.html#cookies">Cookies</a></span>
+        <a class="footer__toplink" href="#main" data-top>Terug naar boven
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+      <div class="footer__word" aria-hidden="true">MILLE<small>Exclusief woonvastgoed — NL</small></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
