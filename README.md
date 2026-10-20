@@ -1,8 +1,8 @@
-# MILLE — Exclusief woonvastgoed
+# MOES ADVIES — Exclusief woonvastgoed
 
 **Live:** https://moussaonline.github.io/mille/
 
-Een high-end conceptsite voor een fictief makelaarskantoor in villa's, penthouses en landgoederen vanaf €1.000.000. Gebouwd als volledig statische site: geen framework, geen build-stap, geen backend.
+Een high-end conceptsite voor Moes Advies: villa's, penthouses en landgoederen vanaf €1.000.000. Gebouwd als volledig statische site: geen framework, geen build-stap, geen backend.
 
 ![Homepage](preview/home.jpg)
 
@@ -23,7 +23,7 @@ Open daarna <http://127.0.0.1:4173>. De site werkt ook door `index.html` direct 
 
 | Pagina | Bestand | Inhoud |
 | --- | --- | --- |
-| Home | `index.html` | Hero, filosofie, uitgelichte collectie, Mille-standaard, cijfers, quotes, journal, CTA |
+| Home | `index.html` | Hero, filosofie, uitgelichte collectie, Moes-standaard, cijfers, quotes, journal, CTA |
 | Collectie | `collectie.html` | 9 objecten, filter op type en regio |
 | Objectpagina's | 9 × `villa-*.html`, `penthouse-*.html`, `landgoed-*.html`, `landhuis-*.html` | Presentatie, kenmerken, galerij met lightbox, omgeving, adviseur, vergelijkbare objecten |
 | Over ons | `over.html` | Verhaal, waarden, team, tijdlijn |
@@ -74,6 +74,14 @@ mille/
 
 De site draait op **GitHub Pages** vanaf de `main`-branch (root). Elke push naar `main` bouwt automatisch opnieuw. De repo is openbaar: <https://github.com/moussaonline/mille>.
 
+## Bedrijfsgegevens
+
+Moes Advies is een handelsnaam van Moes Service.
+
+- Jacob van Lennepkade 155H, 1054 ZL Amsterdam
+- 06 24 77 25 16 · info@moesadvies.nl
+- KvK 89891341 · Btw-id NL004768881B25
+
 ## Let op
 
-MILLE, de objecten, prijzen, adressen en het team zijn fictief. De formulieren zijn demo's: ze valideren en tonen een succesmelding, maar versturen geen gegevens. Beeld en lettertypen zijn vrij te gebruiken; zie [CREDITS.md](CREDITS.md).
+De objecten, prijzen, teamnamen en cijfers op deze site zijn fictief en illustratief. De formulieren zijn demo's: ze valideren en tonen een succesmelding, maar versturen geen gegevens. Beeld en lettertypen zijn vrij te gebruiken; zie [CREDITS.md](CREDITS.md).

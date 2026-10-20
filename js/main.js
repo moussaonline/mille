@@ -1,5 +1,5 @@
 /* ============================================================
-   MILLE — interactions
+   MOES ADVIES — interactions
    ============================================================ */
 (() => {
   'use strict';
@@ -463,7 +463,7 @@
     if (url.origin !== window.location.origin) return;
     if (url.pathname === window.location.pathname && url.search === window.location.search) return;
     e.preventDefault();
-    try { window.sessionStorage.setItem('mille-nav', '1'); } catch (err) {}
+    try { window.sessionStorage.setItem('moes-nav', '1'); } catch (err) {}
     body.classList.add('is-leaving');
     window.setTimeout(() => { window.location.href = url.href; }, reduceMotion ? 0 : 430);
   });

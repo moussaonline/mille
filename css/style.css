@@ -1,7 +1,7 @@
 @import url('../assets/fonts/fonts.css');
 
 /* ============================================================
-   MILLE — Exclusief woonvastgoed
+   MOES ADVIES — Exclusief woonvastgoed
    Design system & site styles
    ============================================================ */
 
@@ -217,14 +217,16 @@ html.is-loading, html.is-loading body { overflow: hidden; }
 }
 .brand {
   justify-self: start; display: inline-flex; align-items: baseline; gap: 0;
-  font-family: var(--serif); font-size: 26px; font-weight: 400; letter-spacing: 0.22em; line-height: 1;
-  padding-left: 0.22em;
+  font-family: var(--serif); font-size: 26px; font-weight: 400; letter-spacing: 0.18em; line-height: 1;
+  padding-left: 0.18em;
 }
 .brand__dot { color: var(--bronze); font-size: 0.8em; margin-left: -0.18em; }
 .brand__sub {
-  display: none; margin-left: 10px; font-family: var(--sans); font-size: 8px; font-weight: 500;
-  letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.55; transform: translateY(-1px);
+  display: inline-block; margin-left: 10px; font-family: var(--sans); font-size: 9px; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--bronze);
+  opacity: 1; transform: translateY(-2px);
 }
+.site-header[data-over] .brand__sub, body.menu-open .brand__sub { color: var(--bronze-light); }
 .nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); justify-self: center; }
 .nav__link {
   position: relative; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
@@ -511,8 +513,8 @@ html.js body.is-loaded .hero__title .line > span { transform: none; }
 /* ---------- Footer ---------- */
 .site-footer { background: var(--ink); color: var(--ivory); border-top: 1px solid var(--line-light); padding-top: clamp(54px, 7vw, 90px); overflow: hidden; }
 .footer__top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: clamp(48px, 6vw, 80px); }
-.footer__brand { font-family: var(--serif); font-size: 30px; letter-spacing: 0.2em; }
-.footer__brand span { color: var(--bronze-light); margin-left: -0.18em; letter-spacing: 0; }
+.footer__brand { display: flex; align-items: baseline; gap: 9px; font-family: var(--serif); font-size: 30px; letter-spacing: 0.18em; }
+.footer__brand span { font-family: var(--sans); font-size: 9px; font-weight: 600; letter-spacing: 0.2em; color: var(--bronze-light); }
 .footer__tag { margin-top: 14px; font-size: 12px; color: rgba(244, 240, 232, 0.55); max-width: 26ch; }
 .footer__col h4, .footer__news h4 { font-family: var(--sans); font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(244, 240, 232, 0.45); margin-bottom: 18px; }
 .footer__col ul { display: flex; flex-direction: column; gap: 10px; }
@@ -783,7 +785,7 @@ html.js body.is-loaded .hero__title .line > span { transform: none; }
 .form-success h3 { font-size: 32px; }
 .form-success p { margin-top: 10px; color: var(--muted); font-size: 12.5px; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-.contact__note { margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 10px; line-height: 1.8; color: var(--muted); }
+.contact__note { margin-top: 0; padding-top: 18px; border-top: 1px solid var(--line); font-size: 10px; line-height: 1.8; color: var(--muted); }
 .contact__note strong { color: var(--ink); font-weight: 600; }
 
 /* ---------- Lightbox ---------- */
@@ -831,9 +833,6 @@ html:not(.js) .reveal-lines .line > span { transform: none; }
 .magnetic { display: inline-block; }
 
 /* ---------- Responsive ---------- */
-@media (min-width: 1200px) {
-  .brand__sub { display: inline; }
-}
 @media (max-width: 1180px) {
   .hero__title { font-size: clamp(3.2rem, 10vw, 7.4rem); }
   .footer__top { grid-template-columns: 1.4fr 1fr 1fr; }
