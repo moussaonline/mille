@@ -70,6 +70,10 @@ mille/
 - Lokaal gehoste lettertypen (geen externe requests)
 - Toegankelijkheid: skip-link, landmarks, labels, zichtbare focus, reduced motion, focusbeheer in menu en lightbox
 
+## Deployment
+
+De site draait op **GitHub Pages** vanaf de `main`-branch (root). Elke push naar `main` bouwt automatisch opnieuw. De repo is openbaar: <https://github.com/moussaonline/mille>.
+
 ## Let op
 
 MILLE, de objecten, prijzen, adressen en het team zijn fictief. De formulieren zijn demo's: ze valideren en tonen een succesmelding, maar versturen geen gegevens. Beeld en lettertypen zijn vrij te gebruiken; zie [CREDITS.md](CREDITS.md).
